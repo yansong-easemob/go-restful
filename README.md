@@ -3,11 +3,11 @@ go-restful
 package for building REST-style Web Services using Google Go
 
 [![Build Status](https://travis-ci.org/emicklei/go-restful.png)](https://travis-ci.org/emicklei/go-restful)
-[![Go Report Card](https://goreportcard.com/badge/github.com/emicklei/go-restful)](https://goreportcard.com/report/github.com/emicklei/go-restful)
-[![GoDoc](https://godoc.org/github.com/emicklei/go-restful?status.svg)](https://pkg.go.dev/github.com/emicklei/go-restful)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yansong-easemob/go-restful)](https://goreportcard.com/report/github.com/yansong-easemob/go-restful)
+[![GoDoc](https://godoc.org/github.com/yansong-easemob/go-restful?status.svg)](https://pkg.go.dev/github.com/yansong-easemob/go-restful)
 [![codecov](https://codecov.io/gh/emicklei/go-restful/branch/master/graph/badge.svg)](https://codecov.io/gh/emicklei/go-restful)
 
-- [Code examples use v3](https://github.com/emicklei/go-restful/tree/v3/examples)
+- [Code examples use v3](https://github.com/yansong-easemob/go-restful/tree/v3/examples)
 
 REST asks developers to use HTTP methods explicitly and in a way that's consistent with the protocol definition. This basic REST design principle establishes a one-to-one mapping between create, read, update, and delete (CRUD) operations and HTTP methods. According to this mapping:
 
@@ -27,7 +27,7 @@ All versions up to `v2.*.*` (on the master) are not supporting Go modules.
 
 ```
 import (
-	restful "github.com/emicklei/go-restful"
+	restful "github.com/yansong-easemob/go-restful"
 )
 ```
 
@@ -37,7 +37,7 @@ As of version `v3.0.0` (on the v3 branch), this package supports Go modules.
 
 ```
 import (
-	restful "github.com/emicklei/go-restful/v3"
+	restful "github.com/yansong-easemob/go-restful/v3"
 )
 ```
 
@@ -62,7 +62,7 @@ func (u UserResource) findUser(request *restful.Request, response *restful.Respo
 }
 ```
 	
-[Full API of a UserResource](https://github.com/emicklei/go-restful/blob/v3/examples/user-resource/restful-user-resource.go) 
+[Full API of a UserResource](https://github.com/yansong-easemob/go-restful/blob/v3/examples/user-resource/restful-user-resource.go) 
 		
 ### Features
 
@@ -79,7 +79,7 @@ func (u UserResource) findUser(request *restful.Request, response *restful.Respo
 - Content encoding (gzip,deflate) of request and response payloads
 - Automatic responses on OPTIONS (using a filter)
 - Automatic CORS request handling (using a filter)
-- API declaration for Swagger UI ([go-restful-openapi](https://github.com/emicklei/go-restful-openapi), see [go-restful-swagger12](https://github.com/emicklei/go-restful-swagger12))
+- API declaration for Swagger UI ([go-restful-openapi](https://github.com/yansong-easemob/go-restful-openapi), see [go-restful-swagger12](https://github.com/yansong-easemob/go-restful-swagger12))
 - Panic recovery to produce HTTP 500, customizable using RecoverHandler(...)
 - Route errors produce HTTP 404/405/406/415 errors, customizable using ServiceErrorHandler(...)
 - Configurable (trace) logging
@@ -101,9 +101,9 @@ There are several hooks to customize the behavior of the go-restful package.
 - [Example programs](./examples)
 - [Example posted on blog](http://ernestmicklei.com/2012/11/go-restful-first-working-example/)
 - [Design explained on blog](http://ernestmicklei.com/2012/11/go-restful-api-design/)
-- [sourcegraph](https://sourcegraph.com/github.com/emicklei/go-restful)
-- [showcase: Zazkia - tcp proxy for testing resiliency](https://github.com/emicklei/zazkia)
-- [showcase: Mora - MongoDB REST Api server](https://github.com/emicklei/mora)
+- [sourcegraph](https://sourcegraph.com/github.com/yansong-easemob/go-restful)
+- [showcase: Zazkia - tcp proxy for testing resiliency](https://github.com/yansong-easemob/zazkia)
+- [showcase: Mora - MongoDB REST Api server](https://github.com/yansong-easemob/mora)
 
 Type ```git shortlog -s``` for a full list of contributors.
 

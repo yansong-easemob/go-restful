@@ -28,7 +28,7 @@ This package has the logic to find the best matching Route and if found, call it
 
 The (*Request, *Response) arguments provide functions for reading information from the request and writing information back to the response.
 
-See the example https://github.com/emicklei/go-restful/blob/v3/examples/user-resource/restful-user-resource.go with a full implementation.
+See the example https://github.com/yansong-easemob/go-restful/blob/v3/examples/user-resource/restful-user-resource.go with a full implementation.
 
 Regular expression matching Routes
 
@@ -82,7 +82,7 @@ These are processed before calling the function associated with the Route.
 	// install 2 chained route filters (processed before calling findUser)
 	ws.Route(ws.GET("/{user-id}").Filter(routeLogging).Filter(NewCountFilter().routeCounter).To(findUser))
 
-See the example https://github.com/emicklei/go-restful/blob/v3/examples/filters/restful-filters.go with full implementations.
+See the example https://github.com/yansong-easemob/go-restful/blob/v3/examples/filters/restful-filters.go with full implementations.
 
 Response Encoding
 
@@ -93,7 +93,7 @@ Two encodings are supported: gzip and deflate. To enable this for all responses:
 If a Http request includes the Accept-Encoding header then the response content will be compressed using the specified encoding.
 Alternatively, you can create a Filter that performs the encoding and install it per WebService or Route.
 
-See the example https://github.com/emicklei/go-restful/blob/v3/examples/encoding/restful-encoding-filter.go
+See the example https://github.com/yansong-easemob/go-restful/blob/v3/examples/encoding/restful-encoding-filter.go
 
 OPTIONS support
 
@@ -172,13 +172,13 @@ preferred package is simple.
 
 Resources
 
-[project]: https://github.com/emicklei/go-restful
+[project]: https://github.com/yansong-easemob/go-restful
 
-[examples]: https://github.com/emicklei/go-restful/blob/master/examples
+[examples]: https://github.com/yansong-easemob/go-restful/blob/master/examples
 
 [design]:  http://ernestmicklei.com/2012/11/11/go-restful-api-design/
 
-[showcases]: https://github.com/emicklei/mora, https://github.com/emicklei/landskape
+[showcases]: https://github.com/yansong-easemob/mora, https://github.com/yansong-easemob/landskape
 
 (c) 2012-2015, http://ernestmicklei.com. MIT License
 */

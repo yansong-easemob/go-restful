@@ -74,7 +74,7 @@ v3.0.0
 
 - fix: use request/response resulting from filter chain
 - add Go module
-  Module consumer should use github.com/emicklei/go-restful/v3 as import path
+  Module consumer should use github.com/yansong-easemob/go-restful/v3 as import path
 
 v2.10.0
 
@@ -155,7 +155,7 @@ v2.6.0
 2017-01-30
  
 	[IMPORTANT] For swagger users, change your import statement to:	
-	swagger "github.com/emicklei/go-restful-swagger12"
+	swagger "github.com/yansong-easemob/go-restful-swagger12"
 
 - moved swagger 1.2 code to go-restful-swagger12
 - created TAG 2.0.0
@@ -363,7 +363,7 @@ Important API changes:
 
 [2012-11-14 .. 2013-05-18>
  
-- See https://github.com/emicklei/go-restful/commits
+- See https://github.com/yansong-easemob/go-restful/commits
 
 2012-11-14
 
